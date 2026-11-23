@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VTodo</string>
+    <string name="widget_name">VTodo Tasks</string>
+    <string name="widget_description">CalDAV (RFC 4791) VTODO task list widget for Nextcloud and standard CalDAV servers. Resizable from a 1×1 task counter to a full interactive desktop list.</string>
+    <string name="widget_all_tasks">All Tasks</string>
+    <string name="widget_empty_unconfigured_title">Connect your CalDAV server</string>
+    <string name="widget_empty_unconfigured_subtitle">Tap to link Nextcloud or any RFC 4791 VTODO server</string>
+    <string name="widget_empty_done_title">All caught up</string>
+    <string name="widget_empty_done_subtitle">Tap + to add a new task</string>
+    <string name="widget_cd_switch_list">Switch task list</string>
+    <string name="widget_cd_refresh">Sync tasks now</string>
+    <string name="widget_cd_add_task">Quick add task</string>
+    <string name="widget_cd_open_app">Open VTodo app</string>
+    <string name="widget_cd_toggle_task">Toggle task completion</string>
+    <string name="widget_footer_not_synced">Tap sync to refresh</string>
+</resources>

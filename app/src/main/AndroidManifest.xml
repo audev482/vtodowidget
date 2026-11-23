@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Googlebook / Large-Screen compatibility -->
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.app_widgets"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.type.pc"
+        android:required="false" />
+
+    <application
+        android:name=".VTodoApp"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VTodo"
+        android:usesCleartextTraffic="false"
+        tools:targetApi="33">
+
+        <!-- Main Googlebook Freeform Desktop Window -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:theme="@style/Theme.VTodo">
+            <layout
+                android:defaultHeight="680dp"
+                android:defaultWidth="940dp"
+                android:gravity="center"
+                android:minHeight="480dp"
+                android:minWidth="460dp" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Lightweight Desktop Quick-Add Dialog (launched from Widget '+' button) -->
+        <activity
+            android:name=".ui.QuickAddActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.VTodo.QuickAddDialog">
+            <layout
+                android:defaultHeight="420dp"
+                android:defaultWidth="480dp"
+                android:gravity="center"
+                android:minHeight="320dp"
+                android:minWidth="360dp" />
+        </activity>
+
+        <!-- Resizable 3x3 Default (1x1 to 4x4+) CalDAV VTODO Desktop Widget -->
+        <receiver
+            android:name=".widget.VTodoWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/vtodo_widget_info" />
+        </receiver>
+
+        <!-- Non-exported internal receiver for Widget PendingIntent clicks -->
+        <receiver
+            android:name=".widget.VTodoWidgetActionReceiver"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

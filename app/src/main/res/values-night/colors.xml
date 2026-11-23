@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window & Surfaces (Deep Midnight Slate) -->
+    <color name="window_bg">#FF0B1120</color>
+    <color name="surface_card_bg">#FF162033</color>
+    <color name="surface_card_stroke">#FF2A3A52</color>
+    <color name="surface_tonal_bg">#FF1E293B</color>
+    <color name="surface_row_bg">#FF1B263B</color>
+    <color name="completed_row_bg">#FF113536</color>
+    <color name="completed_row_stroke">#FF115E59</color>
+
+    <!-- Primary Accent (Pastel Sky Blue) & Secondary (Mint Teal) -->
+    <color name="accent_primary">#FF60A5FA</color>
+    <color name="accent_primary_container">#FF1E3A5F</color>
+    <color name="accent_on_primary">#FF0B1F3A</color>
+    <color name="accent_on_container">#FFE0F2FE</color>
+    <color name="accent_teal">#FF2DD4BF</color>
+
+    <!-- Typography (High-Contrast Cool Slate) -->
+    <color name="text_primary">#FFF1F5F9</color>
+    <color name="text_secondary">#FFCBD5E1</color>
+    <color name="text_muted">#FF94A3B8</color>
+
+    <!-- Status & Due Chips -->
+    <color name="overdue_bg">#FF450A0A</color>
+    <color name="overdue_text">#FFFCA5A5</color>
+    <color name="due_today_bg">#FF1E3A5F</color>
+    <color name="due_today_text">#FF93C5FD</color>
+    <color name="due_upcoming_bg">#FF263348</color>
+    <color name="due_upcoming_text">#FFCBD5E1</color>
+
+    <!-- Priority Indicators -->
+    <color name="priority_high">#FFF87171</color>
+    <color name="priority_medium">#FFFBBF24</color>
+    <color name="priority_low">#FF60A5FA</color>
+
+    <!-- Compact 1x1 Widget Surface -->
+    <color name="widget_compact_bg">#FF1E3A5F</color>
+    <color name="widget_compact_stroke">#FF3B82F6</color>
+    <color name="widget_compact_badge_bg">#FF60A5FA</color>
+    <color name="widget_compact_badge_text">#FF0B1F3A</color>
+</resources>

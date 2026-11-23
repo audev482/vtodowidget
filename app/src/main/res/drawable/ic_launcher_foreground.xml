@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Subtle back stacked card -->
+    <path
+        android:fillColor="#44FFFFFF"
+        android:pathData="M34,26 L74,26 C78.4,26 82,29.6 82,34 L82,70 C82,74.4 78.4,78 74,78 L34,78 C29.6,78 26,74.4 26,70 L26,34 C26,29.6 29.6,26 34,26 Z" />
+    <!-- Primary crisp white task card -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M30,30 L74,30 C77.3,30 80,32.7 80,36 L80,74 C80,77.3 77.3,80 74,80 L30,80 C26.7,80 24,77.3 24,74 L24,36 C24,32.7 26.7,30 30,30 Z" />
+    <!-- Top completed row: Teal check circle + completed bar -->
+    <path
+        android:fillColor="#FF0D9488"
+        android:pathData="M37,43 m-5.5,0 a5.5,5.5 0 1,0 11,0 a5.5,5.5 0 1,0 -11,0" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M34.3,43.2 L36.3,45.2 L40.2,40.9"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="2.1" />
+    <path
+        android:fillColor="#FF94A3B8"
+        android:pathData="M47,41 L71,41 C72.1,41 73,41.9 73,43 C73,44.1 72.1,45 71,45 L47,45 C45.9,45 45,44.1 45,43 C45,41.9 45.9,41 47,41 Z" />
+    <!-- Middle active row: Cobalt ring + primary bar -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M37,56 m-4.5,0 a4.5,4.5 0 1,0 9,0 a4.5,4.5 0 1,0 -9,0"
+        android:strokeColor="#FF1D4ED8"
+        android:strokeWidth="2.3" />
+    <path
+        android:fillColor="#FF1E293B"
+        android:pathData="M47,54 L67,54 C68.1,54 69,54.9 69,56 C69,57.1 68.1,58 67,58 L47,58 C45.9,58 45,57.1 45,56 C45,54.9 45.9,54 47,54 Z" />
+    <!-- Bottom active row: Cobalt ring + shorter bar -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M37,69 m-4.5,0 a4.5,4.5 0 1,0 9,0 a4.5,4.5 0 1,0 -9,0"
+        android:strokeColor="#FF2563EB"
+        android:strokeWidth="2.3" />
+    <path
+        android:fillColor="#FF475569"
+        android:pathData="M47,67 L62,67 C63.1,67 64,67.9 64,69 C64,70.1 63.1,71 62,71 L47,71 C45.9,71 45,70.1 45,69 C45,67.9 45.9,67 47,67 Z" />
+</vector>
